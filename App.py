@@ -81,7 +81,10 @@ def Mono(df):
 
 
 
-        fig.update_layout(annotations=annotations,title='Evolución Valor Cuota ',width=800, height=400)
+        fig.update_layout(annotations=annotations,
+                          title='Evolución Valor Cuota ',
+                          width=1600, 
+                          height=800)
 
         return fig
 
