@@ -44,7 +44,7 @@ def ValCuota(nombre,desde):
 @st.cache(allow_output_mutation=True)
 def Mono(df):
 
-        fig = go.Figure(width=800, height=400)
+        fig = go.Figure()
 
         fig.add_trace(go.Scatter(x=df.fecha,
                                 y=df.precio,
@@ -81,7 +81,7 @@ def Mono(df):
 
 
 
-        fig.update_layout(annotations=annotations,title='Evolución Valor Cuota ')
+        fig.update_layout(annotations=annotations,title='Evolución Valor Cuota ',width=800, height=400)
 
         return fig
 
