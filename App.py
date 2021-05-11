@@ -44,7 +44,7 @@ def ValCuota(nombre,desde):
 @st.cache(allow_output_mutation=True)
 def Mono(df):
 
-        fig = go.Figure()
+        fig = go.Figure(width=800, height=400)
 
         fig.add_trace(go.Scatter(x=df.fecha,
                                 y=df.precio,
