@@ -100,4 +100,4 @@ nombre_fondo=st.sidebar.selectbox('Elige tu fondo',('Risky Norris','Moderate Pit
 data = ValCuota(nombre_fondo,inicio)
 
 st.plotly_chart(Mono(data))
-#st.write(data[['fecha','precio']])
+st.write(data[['fecha','precio']])
