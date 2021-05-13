@@ -41,7 +41,7 @@ def ValCuota(nombre,desde):
     return df
 
 
-@st.cache(allow_output_mutation=True)
+#@st.cache(allow_output_mutation=True)
 def Mono(df):
 
         fig = go.Figure()
